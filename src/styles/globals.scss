@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Nunito', sans-serif;
+		text-rendering: optimizeSpeed;
+	}
+}
+
+@layer components {
+	.form {
+		@apply p-4 max-w-[320px] min-w-[320px] border bg-white rounded-sm;
+
+		&-container {
+			@apply fixed inset-0 z-30 flex items-center justify-center bg-matrix bg-no-repeat bg-cover bg-center;
+		}
+
+		&-group {
+			@apply relative mb-4;
+		}
+
+		&-input {
+			@apply block w-full p-2 my-1 border-2 rounded-sm outline-none focus:border-2 focus:border-gray-700 transition;
+		}
+	}
+
+	.btn {
+		@apply inline-block py-1 px-2 font-medium text-white rounded-md select-none hover:shadow-md transition;
+
+		&-primary {
+			@apply py-2 px-3 rounded-full shadow shadow-sky-500/50 bg-sky-500 hover:bg-sky-600;
+		}
+
+		&-play {
+			@apply flex items-center gap-1 bg-green-500 hover:bg-green-600;
+		}
+	}
+}
