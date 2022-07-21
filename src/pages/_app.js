@@ -8,7 +8,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import '../styles/globals.scss'
 import { onAuthStateChanged, auth, getDoc, doc, db } from '../config'
 import { DefaultLayout } from '../layouts'
-import { setData } from 'store/reducers/userSlice'
+import { setData } from '../store/reducers/userSlice'
 import Loading from '../components/Loading'
 import store from '../store'
 

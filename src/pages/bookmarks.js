@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { userSelector, updateData } from '../store/reducers/userSlice'
 import { IoCloseCircle } from 'react-icons/io5'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 import { db, doc, updateDoc } from '../config'
+import { userSelector, updateData } from '../store/reducers/userSlice'
 
 function Bookmarks() {
 	const user = useSelector(userSelector)
